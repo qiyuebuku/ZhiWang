@@ -1,0 +1,44 @@
+<form id="formLogin" name="formLogin" method="post" action="login_psw.csp?sfrnd=2346912324982305" onsubmit="return formSubmit();">
+				<input type="hidden" name="mitm_result" id="txtMITEMAttack"/>
+				2346912324982305
+				2346912324982305
+                2AB0E194F167F7532873AE43ADDAF984D77F4739
+				0959eabe2586c77ab59712593e155fb2
+				B43B1DD43EE3300A573581C520EDC9E61C054DE44F997C3A5EF429F6F5584AC88EBE7DEB1FCAAABDC7DAF75E10C7FD50878875BA9A60D99CB8AB820B8CE043BE7E5BA34079D9918ACF1D13403A5F34E13AB72A927EEA3275F710A13CA8EFA48EA227AFEA693A9987BF0100D25E897E85E439E8898DFA503A4C2982A2B5833948806DAD0671B8898760871DE0652E882F1DC08F5D2C79DB8E0D89929C53AC7A24F1E834BCAD1133FCE3955064D0136C8F994438DB0BEE7130BE48E68003D5DBD85719AE8CD3EFE657F5867A3D5ACACF1773B0D1EE8DF4F6F967AAC261554C28B9762C00D2815C1C9A2891BFF2D237F4752CDF864CB94EE6AA2B1C871A915F09B3
+				0e3e0e76bd51bee748285593e0cb936ae3f93ed7815b4a462b8759c23ef1613cb4dc02a2c20b495943d9419d8aa82a0752cadc371ea036a099aa0aa1cab9ca182f092f47d4e2ae1f05c539c7fd567184ef32e2767fce84588ec4a17384a0c9f75e2881b6c5f0b634d227a863332cf05b2f29e8e0c3d14399be248d876a5fe4a9
+                <input type="hidden" name="svpn_req_randcode" id="svpn_req_randcode" value="4505"/>
+				<dl>
+					<dt _html="用户名:"></dt>
+					<dd>
+						<input type="text" id="svpn_name" name="svpn_name" class="inptxt" maxlength="49" autocomplete="off" />
+					</dd>
+				</dl>
+				<dl class="psw_cls">
+					<dt _html="密　码:"></dt>
+					<dd>
+						<input type="password" style="display:none;"> <!-- 增加一隐藏的input，让浏览器不自动进行填充 勿删 add by hcz-->
+						<input type="password" id="svpn_password" name="svpn_password" class="inptxt" maxlength="48" autocomplete="off"  />
+
+						<a id="resetpsw" class="hide" href="/com/forgetPassword.html" _html="忘记密码了？"></a>
+					</dd>
+				</dl>
+				<dl id="p_rand_code" class="hide">
+					<dt _html="验证码:"></dt>
+					<dd>
+						<input type="text" id="randcode" name="svpn_rand_code" maxlength="4" class="inptxt" autocomplete="off">
+						<div>
+							<span class="rand_tip" _html="请按下面的字符填写，不区分大小写"></span><br/>
+							<img id='randcodeImg' align="absmiddle" width="63" height="19"  />
+							<a href="#" onClick="ChangeRandCode(); return false;" _html="看不清楚？换一个"></a>
+						</div>
+					</dd>
+				</dl>
+				<dl style="margin-bottom:10px">
+					<dt>&nbsp;</dt>
+					<dd>
+						<button id="logButton" class="btn" type="submit" onfocus="closeSoftKb()" _html="登 录"></button>&nbsp;&nbsp;
+						<button id="anonyButton" class="btn" style="display:none;" type="button" onclick="anonymousLogin()" _html="匿名登录"></button>
+					</dd>
+				</dl>
+				<div id="tipsContent" onclick="hideMsg();" class="hide" ></div>
+			</form>
